@@ -9,12 +9,63 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
 </head>
 <style>
+    body {
+        margin: 0;
+    padding: 0;
+    }
       .social-part .fa{
     padding-right:20px;
 }
 ul li a{
     margin-right: 20px;
 }
+form {
+  padding: 1em;
+
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background: green ;
+  padding: 0.7em;
+  border: 0;
+}
+
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+  label {
+    float: left;
+    width: 250px;
+  }
+
+  input {
+    float: left;
+    width: 45%;
+  }
+
+  button {
+    text-align: center;
+    margin-left: 48%;
+
+  }
 </style>
 <body>
     <nav class="navbar navbar-expand-sm   navbar-light bg-light">
@@ -58,5 +109,19 @@ ul li a{
         background-position-y: 30%; z-index: -1;">
         <h1 style="z-index: 0; color:black; padding: 140px 80px 80px 80px; text-align: center;">Contact Us<br></h1>
         </div>
+
+        <form class="form1">
+            <label for="fname"><b>Name:</b></label>
+            <input type="text" placeholder="Enter name" name="fname" autofocus required>
+            <label for="lname"><b>Email:</b></label>
+            <input type="email" placeholder="Email" name="lname" >
+            <label for="number"><b>Subject:</b></label>
+            <input type="text" placeholder="Subject" name="number">
+            <label for="Message"><b>Message:</b></label>
+            <textarea rows="4" cols="50" name="comment" form="usrform" style="width: 47%;">
+                </textarea> <br>
+            
+            <button>Submit</button>
+        </form>
 </body>
 </html>
